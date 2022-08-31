@@ -1,0 +1,22 @@
+FloatLayout:
+    MDTopAppBar:
+        title: "[size=17]conversor de velocidade[/size]"
+        md_bg_color: app.theme_cls.primary_dark
+        right_action_items: [["close-octagon",lambda x: app.fechar()]]
+        left_action_items: [["menu", lambda x: x]]
+        pos_hint: {"center_x": 0.5, "center_y": 0.95}
+    Image:
+        source: "logo.png"
+        allow_stretch : True
+        size_hint: 0.6,0.7
+        pos_hint: {'center_x:': 1.0,'center_y':0.5}
+    MDRaisedButton:
+        text: "[size=17]converter km/h para m/s[/size]"
+        pos_hint: {"center_x": 0.5,"center_y":0.3}
+        size_hint: 0.7,0.1
+        md_bg_color: app.theme_cls.primary_dark
+    MDRaisedButton:
+        text: "[size=17]converter m/s para km/h[/size]"
+        pos_hint: {"center_x": 0.5,"center_y":0.15}
+        size_hint: 0.7,0.1
+        md_bg_color: app.theme_cls.primary_dark
